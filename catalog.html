@@ -18,12 +18,13 @@
       </a>
       <div class="header__top">
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-          <label aria-label="Поле поиска">
+          <label>
+            <span class="visually-hidden">поле поиска</span>
             <input class="search-form__field" type="search" name="search" placeholder="Поиск по сайту">
           </label>
           <button class="search-form__btn" type="submit">Найти</button>
         </form>
-        <ul class="header-top">
+        <ul class="header-top reset-list">
           <li class="header-top__item">
             <a class="header-top__link header-top__link--name" href="#">Коля Петухов</a>
           </li>
@@ -39,10 +40,10 @@
         </ul>
       </div>
       <nav class="navigation">
-        <ul class="navigation__list">
+        <ul class="navigation__list reset-list">
           <li class="navigation__item">
             <a class="navigation__link" href="#">каталог товаров</a>
-            <ul class="catalog catalog--close">
+            <ul class="catalog reset-list catalog--close">
               <li class="catalog__item">
                 <a class="catalog__link catalog__link--vr" href="#">Виртуальная реальность</a>
               </li>
@@ -82,7 +83,7 @@
 
     <header class="header-inner">
       <div class="container">
-        <h1 class="header-inner__title">Моноподы для селфи</h1>
+        <h1 class="header-inner__title huge-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Главная</a>
@@ -102,14 +103,14 @@
 
         <section class="filter">
 
-          <h2 class="filter__title">Фильтр:</h2>
-          <form class="filter--monopod" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="filter__title text-spacing">Фильтр:</h2>
+          <form class="filter__monopod" method="POST" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group">
               <legend class="filter__item">Стоимость</legend>
-              <button class="range-toggle toggle--min">
+              <button class="range-toggle range-toggle--min">
                 <span class="visually-hidden">Изменить минимальную цену</span>
               </button>
-              <button class="range-toggle toggle--max">
+              <button class="range-toggle range-toggle--max">
                 <span class="visually-hidden">Изменить максимальную цену</span>
               </button>
               <label class="filter__label">от 0
@@ -139,67 +140,80 @@
               <input class="filter__radio visually-hidden" type="radio" id="no" name="boolean">
               <label for="no">Нет</label>
             </fieldset>
-            <button class="filter__btn btn" type="submit">показать</button>
+            <button class="filter__btn text-spacing btn-decoration" type="submit">показать</button>
           </form>
 
         </section>
 
         <div class="sorting">
-          <h2 class="sorting__title">Сортировка</h2>
-          <form action="https://echo.htmlacademy.ru/">
+          <h2 class="sorting__title text-spacing">Сортировка</h2>
+          <form method="POST" action="https://echo.htmlacademy.ru/">
             <select name="sorting__type">
+              <span class="visually-hidden">поле сортировки по типу</span>
               <option class="sorting__popular" value="popular">Сначала популярные</option>
             </select>
+            <button class="arrow arrow--up visually-hidden">По возрастанию</button>
+            <button class="arrow arrow--down arrow--action visually-hidden">По убыванию</button>
           </form>
-          <a class="arrow arrow--up arrow--action" href="#">По возрастанию</a>
-          <a class="arrow arrow--down" href="#">По убыванию</a>
         </div>
 
         <section class="goods">
 
           <h2 class="visually-hidden">Список товров</h2>
-          <ul class="goods__list">
+          <ul class="goods__list reset-list">
             <li class="goods__item">
-              <a class="goods__link" href="">
-                <img class="goods__img" src="img/catalog/product-1.jpg" width="360" height="380"
-                  alt="Любительская селфи-палка">
-                <h3 class="goods__title">Любительская селфи-палка</h3>
-              </a>
-              <b class="goods__price">500 ₽</b>
-              <a class="visually-hidden__btn btn" href="#">подробнее</a>
+              <article class="product">
+                <a class="product__link" href="#">
+                  <div class="product__image-wrapper">
+                    <img class="product__img" src="img/catalog/monopod-amateur.jpg" width="360" height="380" alt="простой монопод для смартфона черного цвета">
+                  </div>
+                  <h3 class="product__title">Любительская селфи-палка</h3>
+                </a>
+                <b class="product__price">500 ₽</b>
+                <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+              </article>
             </li>
             <li class="goods__item">
-              <a class="goods__link" href="">
-                <img class="goods__img" src="img/catalog/product-2.jpg" width="360" height="380"
-                  alt="Профессиональная селфи-палка">
-                <h3 class="goods__title">Профессиональная селфи-палка</h3>
-              </a>
-              <b class="goods__price">1 500 ₽</b>
-              <a class="visually-hidden__btn btn" href="#">подробнее</a>
+              <article class="product">
+                <a class="product__link" href="#">
+                  <div class="product__image-wrapper">
+                    <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380" alt="профессиональный монопод черного цвета">
+                  </div>
+                  <h3 class="product__title">Профессиональная селфи-палка</h3>
+                </a>
+                <b class="product__price">1 500 ₽</b>
+                <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+              </article>
             </li>
             <li class="goods__item">
-              <a class="goods__link" href="">
-                <img class="goods__img" src="img/catalog/product-3.jpg" width="360" height="380"
-                  alt="Непотопляемая селфи-палка">
-                <h3 class="goods__title">Непотопляемая селфи-палка</h3>
-              </a>
-              <b class="goods__price">2 500 ₽</b>
-              <a class="visually-hidden__btn btn" href="#">подробнее</a>
+              <article class="product">
+                <a class="product__link" href="#">
+                  <div class="product__image-wrapper">
+                    <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380" alt="желтый монопод с черной резиновой ручкой">
+                  </div>
+                  <h3 class="product__title">Непотопляемая селфи-палка</h3>
+                </a>
+                <b class="product__price">2 500 ₽</b>
+                <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+              </article>
             </li>
             <li class="goods__item">
-              <a class="goods__link" href="">
-                <img class="goods__img" src="img/catalog/product-4.jpg" width="360" height="380"
-                  alt="Селфи-палка «Следуй за мной»">
-                <h3 class="goods__title">Селфи-палка «Следуй за мной»</h3>
-              </a>
-              <b class="goods__price">4 900 ₽</b>
-              <a class="visually-hidden__btn btn" href="#">подробнее</a>
+              <article class="product">
+                <a class="product__link" href="#">
+                  <div class="product__image-wrapper">
+                    <img class="product__img" src="img/catalog/monopod-follow-me.jpg" width="360" height="380" alt="монопод для селфи в виде руки»">
+                  </div>
+                  <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
+                </a>
+                <b class="product__price">4 900 ₽</b>
+                <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+              </article>
             </li>
           </ul>
-          <a class="goods__more-btn">загрузить еще</a>
+          <a class="goods__more-btn text-spacing">загрузить еще</a>
           <ul class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--prev pagination__link--disabled">назад</a>
+              <a class="pagination__link pagination__link--prev pagination__link--disabled text-spacing">назад</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--current">1</a>
@@ -217,7 +231,7 @@
               <a class="pagination__link" href="#">15</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--next" href="#">вперед</a>
+              <a class="pagination__link pagination__link--next text-spacing" href="#">вперед</a>
             </li>
           </ul>
 
@@ -225,23 +239,22 @@
       </div>
     </div>
 
-
   </main>
 
-  <footer class="footer">
+  <footer class="page-footer">
 
     <div class="container">
-      <div class="foorer__column">
-        <a href="index.html" class="footer__logo">
+      <div class="page-footer__column">
+        <a cclass="footer__logo" href="index.html">
           <img src="img/device-footer.svg" width="145" height="36" alt="логотип магазина Девайс">
         </a>
-        <p class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="page-footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
-      <div class="foorer__column">
-        <nav class="footer__navigation">
-          <a class="footer__navigation-link" href="#">доставка</a>
-          <a class="footer__navigation-link" href="#">гарантия</a>
-          <a class="footer__navigation-link" href="#">контакты</a>
+      <div class="page-footer__column">
+        <nav class="page-footer__navigation">
+          <a class="page-footer__navigation-link text-spacing" href="#">доставка</a>
+          <a class="page-footer__navigation-link text-spacing" href="#">гарантия</a>
+          <a class="page-footer__navigation-link text-spacing" href="#">контакты</a>
         </nav>
         <div class="social">
           <a class="social__link social__link--facebook visually-hidden" href="#">мы в фейсбук</a>
@@ -249,11 +262,10 @@
           <a class="social__link social__link--twitter visually-hidden" href="#">мы в Твиттере</a>
         </div>
       </div>
-      <div class="foorer__column">
-        <p class="footer__phone">Тел.: +7 (812) 812-12-12</p>
-        <a class="footer__copyright" href="https://htmlacademy.ru">
-          <img class="footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34"
-            alt="логотип htmlacademy">
+      <div class="page-footer__column">
+        <a class="page-footer__phone" href="tel:881288121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru">
+          <img class="page-footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy">
         </a>
       </div>
     </div>
