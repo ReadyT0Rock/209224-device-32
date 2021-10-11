@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Egor Vydrin](https://up.htmlacademy.ru/htmlcss/32/user/209224).
-* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
