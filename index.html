@@ -17,7 +17,7 @@
       <a class="logo">
         <img class="logo__img" src="img/device-header.svg" width="145" height="36" alt="логотип магазина Девайс">
       </a>
-      <div class="header__top">
+      <div class="header-top">
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
           <label>
             <span class="visually-hidden">поле поиска</span>
@@ -25,7 +25,7 @@
           </label>
           <button class="search-form__btn" type="submit">Найти</button>
         </form>
-        <ul class="header-top reset-list">
+        <ul class="header-top__list reset-list">
           <li class="header-top__item">
             <a class="header-top__link header-top__link--login" href="#">Войти</a>
           </li>
@@ -41,7 +41,7 @@
         <ul class="navigation__list reset-list">
           <li class="navigation__item">
             <a class="navigation__link text-spacing" href="#">каталог товаров</a>
-            <ul class="catalog reset-list catalog--close">
+            <ul class="catalog reset-list catalog--close visually-hidden">
               <li class="catalog__item">
                 <a class="catalog__link catalog__link--vr" href="#">Виртуальная реальность</a>
               </li>
@@ -77,7 +77,7 @@
 
   </header>
 
-  <main class="main">
+  <main class="main-container">
 
     <article class="preview-goods">
 
@@ -90,58 +90,68 @@
         </button>
         <ul class="preview-goods__list reset-list">
           <li class="preview-goods__item preview-goods__item--quadcopter">
-            <img class="preview-goods__img" src="img/index/preview-goods-quadrocopter.png" width="560" height="560" alt="Фото квадрокоптера">
-            <span class="preview-goods__decoration">01</span>
-            <h2 class="preview-goods__title huge-title">Порхает как бабочка, жалит как пчела!</h2>
-            <p class="preview-goods__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.</p>
-            <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
-            <table class="specifications">
-              <tr>
-                <td class="specifications__value">800 м</td>
-                <td class="specifications__value">50 м</td>
-              </tr>
-              <tr>
-                <th class="specifications__attribute">Дальность полета</th>
-                <th class="specifications__attribute">Радиус поражения</th>
-              </tr>
-            </table>
+            <img class="preview-goods__img" src="img/index/preview-goods-quadrocopter.png" width="560" height="560"
+              alt="Фото квадрокоптера">
+            <div>
+              <span class="preview-goods__decoration">01</span>
+              <h2 class="preview-goods__title huge-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="preview-goods__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <table class="specifications">
+                <tr>
+                  <td class="specifications__value">800 м</td>
+                  <td class="specifications__value">50 м</td>
+                </tr>
+                <tr>
+                  <th class="specifications__attribute">Дальность полета</th>
+                  <th class="specifications__attribute">Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
           </li>
-          <li class="preview-goods__item preview-goods__item--fitness">
-            <img class="preview-goods__img" src="img/index/preview-goods-fitness.png" width="560" height="560" alt="Фото фитнес-браслета">
-            <span class="preview-goods__decoration">02</span>
-            <h2 class="preview-goods__title">Худеем правильно!</h2>
-            <p class="preview-goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-              занятия и соблюдать диету.</p>
-            <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
-            <table class="specifications">
-              <tr>
-                <td class="specifications__value">48 часов</td>
-              </tr>
-              <tr>
-                <th class="specifications__attribute">Без подзарядки</th>
-              </tr>
-            </table>
+          <li class="preview-goods__item preview-goods__item--fitness visually-hidden">
+            <img class="preview-goods__img" src="img/index/preview-goods-fitness.png" width="560" height="560"
+              alt="Фото фитнес-браслета">
+            <div>
+              <span class="preview-goods__decoration">02</span>
+              <h2 class="preview-goods__title">Худеем правильно!</h2>
+              <p class="preview-goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                занятия и соблюдать диету.</p>
+              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <table class="specifications">
+                <tr>
+                  <td class="specifications__value">48 часов</td>
+                </tr>
+                <tr>
+                  <th class="specifications__attribute">Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
           </li>
-          <li class="preview-goods__item preview-goods__item--monopod">
-            <img class="preview-goods__img" src="img/index/preview-goods-monopod.png" width="560" height="560" alt="Фото монопода">
-            <span class="preview-goods__decoration">03</span>
-            <h2 class="preview-goods__title">Делай селфи, как Бен Стиллер!</h2>
-            <p class="preview-goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-            </p>
-            <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
-            <table class="specifications">
-              <tr>
-                <td class="specifications__value">8,5 м</td>
-                <td class="specifications__value">5 кг</td>
-                <td class="specifications__value">Карбон</td>
-              </tr>
-              <tr>
-                <th class="specifications__attribute">Длина палки</th>
-                <th class="specifications__attribute">Вес палки</th>
-                <th class="specifications__attribute">Материал</th>
-              </tr>
-            </table>
+          <li class="preview-goods__item preview-goods__item--monopod visually-hidden">
+            <img class="preview-goods__img" src="img/index/preview-goods-monopod.png" width="560" height="560"
+              alt="Фото монопода">
+            <div>
+              <span class="preview-goods__decoration">03</span>
+              <h2 class="preview-goods__title">Делай селфи, как Бен Стиллер!</h2>
+              <p class="preview-goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <table class="specifications">
+                <tr>
+                  <td class="specifications__value">8,5 м</td>
+                  <td class="specifications__value">5 кг</td>
+                  <td class="specifications__value">Карбон</td>
+                </tr>
+                <tr>
+                  <th class="specifications__attribute">Длина палки</th>
+                  <th class="specifications__attribute">Вес палки</th>
+                  <th class="specifications__attribute">Материал</th>
+                </tr>
+              </table>
+            </div>
           </li>
         </ul>
         <ol class="preview-goods__pagination">
@@ -165,26 +175,26 @@
 
     </article>
 
-    <section class="categories">
+    <section class="category">
 
       <div class="container">
         <h2 class="visually-hidden">Категории</h2>
-        <table class="categories__table">
+        <table class="category__table">
           <tr>
-            <td class="categories__item categories__item--vr"></td>
-            <td class="categories__item categories__item--monopod"></td>
-            <td class="categories__item categories__item--action-cameras"></td>
-            <td class="categories__item categories__item--fitness"></td>
-            <td class="categories__item categories__item--smart-watch"></td>
-            <td class="categories__item categories__item--quadrocopter"></td>
+            <td class="category__item category__item--vr"></td>
+            <td class="category__item category__item--monopod"></td>
+            <td class="category__item category__item--action-cameras"></td>
+            <td class="category__item category__item--fitness"></td>
+            <td class="category__item category__item--smart-watch"></td>
+            <td class="category__item category__item--quadrocopter"></td>
           </tr>
           <tr>
-            <th class="categories__title">Виртуальная реальность</th>
-            <th class="categories__title">Моноподы для селфи</th>
-            <th class="categories__title">Экшн-камеры</th>
-            <th class="categories__title">Фитнес-браслеты</th>
-            <th class="categories__title">Умные часы</th>
-            <th class="categories__title">Квадрокоптеры</th>
+            <th class="category__title">Виртуальная реальность</th>
+            <th class="category__title">Моноподы для селфи</th>
+            <th class="category__title">Экшн-камеры</th>
+            <th class="category__title">Фитнес-браслеты</th>
+            <th class="category__title">Умные часы</th>
+            <th class="category__title">Квадрокоптеры</th>
           </tr>
         </table>
       </div>
@@ -195,7 +205,7 @@
 
       <div class="container">
         <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="services__list">
+        <ul class="services__list reset-list">
           <li class="services__items">
             <button class="services__btn services__btn--delivery text-spacing btn-decoration">доставка</button>
           </li>
@@ -213,16 +223,16 @@
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</dd>
         </dl>
-        <dl class="services__details services__details--guarantee">
-          <dt class="services__title services__title--guarantee">Гарантия</dt>
+        <dl class="services__details services__details--guarantee visually-hidden">
+          <dt class="services__title services__title--guarantee huge-title">Гарантия</dt>
           <dd class="services__description services__description--guarantee">
             Если из-за возгорания купленного у нас
             товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</dd>
         </dl>
-        <dl class=" services__details services__details--credit">
-          <dt class="services__title services__title--credit">Кредит</dt>
+        <dl class=" services__details services__details--credit visually-hidden">
+          <dt class="services__title services__title--credit huge-title">Кредит</dt>
           <dd class="services__description services__description--credit">
             Залезть в долговую яму стало проще! Кредитные
             консультанты подберут для вас наиболее выгодные условия
@@ -242,7 +252,7 @@
 
     </section>
 
-    <section class="about">
+    <section class="about-us">
 
       <div class="container">
         <section class="about">
@@ -250,7 +260,7 @@
           <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
           </p>
-          <ul class="about__list">
+          <ul class="about__list reset-list">
             <li class="about__item">Меловые линии</li>
             <li class="about__item">СДИК</li>
             <li class="about__item">ТоксБерри</li>
@@ -294,7 +304,7 @@
 
     <div class="container">
       <div class="page-footer__column">
-        <a class="page-footer__logo" href="index.html" >
+        <a class="page-footer__logo" href="index.html">
           <img src="img/device-footer.svg" width="145" height="36" alt="логотип магазина Девайс">
         </a>
         <p class="page-footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -306,9 +316,9 @@
           <a class="page-footer__navigation-link text-spacing" href="#">контакты</a>
         </nav>
         <div class="social">
-          <a class="social__link social__link--facebook visually-hidden" href="#">мы в фейсбук</a>
-          <a class="social__link social__link--instagram visually-hidden" href="#">мы в инстаграм</a>
-          <a class="social__link social__link--twitter visually-hidden" href="#">мы в Твиттере</a>
+          <a class="social__link social__link--facebook" href="#">мы в фейсбук</a>
+          <a class="social__link social__link--instagram" href="#">мы в инстаграм</a>
+          <a class="social__link social__link--twitter" href="#">мы в Твиттере</a>
         </div>
       </div>
       <div class="page-footer__column">
