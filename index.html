@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="page-header">
 
     <div class="container">
       <h1 class="visually-hidden">Device интернет-магазин устройств</h1>
@@ -77,27 +77,27 @@
 
   </header>
 
-  <main class="main-container">
+  <main class="page-main">
 
-    <article class="preview-goods">
+    <section class="promo">
 
       <div class="container">
-        <button class="preview-goods__btn preview-goods__btn--prev">
+        <button class="promo__btn promo__btn--prev">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
-        <button class="preview-goods__btn preview-goods__btn--next">
+        <button class="promo__btn promo__btn--next">
           <span class="visually-hidden">Следующее фото</span>
         </button>
-        <ul class="preview-goods__list reset-list">
-          <li class="preview-goods__item preview-goods__item--quadcopter">
-            <img class="preview-goods__img" src="img/index/preview-goods-quadrocopter.png" width="560" height="560"
+        <ul class="promo__list reset-list">
+          <li class="promo__item promo__item--quadcopter">
+            <img class="promo__img" src="img/index/promo-quadrocopter.png" width="560" height="560"
               alt="Фото квадрокоптера">
-            <div>
-              <span class="preview-goods__decoration">01</span>
-              <h2 class="preview-goods__title huge-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="preview-goods__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            <div class="promo__right-column">
+              <span class="promo__decoration">01</span>
+              <h2 class="promo__title huge-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">800 м</td>
@@ -110,15 +110,15 @@
               </table>
             </div>
           </li>
-          <li class="preview-goods__item preview-goods__item--fitness visually-hidden">
-            <img class="preview-goods__img" src="img/index/preview-goods-fitness.png" width="560" height="560"
+          <li class="promo__item promo__item--fitness visually-hidden">
+            <img class="promo__img" src="img/index/promo-fitness.png" width="560" height="560"
               alt="Фото фитнес-браслета">
-            <div>
-              <span class="preview-goods__decoration">02</span>
-              <h2 class="preview-goods__title">Худеем правильно!</h2>
-              <p class="preview-goods__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+            <div class="promo__right-column">
+              <span class="promo__decoration">02</span>
+              <h2 class="promo__title">Худеем правильно!</h2>
+              <p class="promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
-              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">48 часов</td>
@@ -129,16 +129,16 @@
               </table>
             </div>
           </li>
-          <li class="preview-goods__item preview-goods__item--monopod visually-hidden">
-            <img class="preview-goods__img" src="img/index/preview-goods-monopod.png" width="560" height="560"
+          <li class="promo__item promo__item--monopod visually-hidden">
+            <img class="promo__img" src="img/index/promo-monopod.png" width="560" height="560"
               alt="Фото монопода">
-            <div>
-              <span class="preview-goods__decoration">03</span>
-              <h2 class="preview-goods__title">Делай селфи, как Бен Стиллер!</h2>
-              <p class="preview-goods__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+            <div class="promo__right-column">
+              <span class="promo__decoration">03</span>
+              <h2 class="promo__title">Делай селфи, как Бен Стиллер!</h2>
+              <p class="promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                 (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
-              <a class="preview-goods__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">8,5 м</td>
@@ -154,49 +154,57 @@
             </div>
           </li>
         </ul>
-        <ol class="preview-goods__pagination">
-          <li class="preview-goods__pagination-item">
-            <button class="preview-goods__pagination-btn preview-goods__pagination-btn--active">
+        <ol class="promo__pagination">
+          <li class="promo__pagination-item">
+            <button class="promo__pagination-btn promo__pagination-btn--active">
               <span class="visually-hidden">1 товар</span>
             </button>
           </li>
-          <li class="preview-goods__pagination-item">
-            <button class="preview-goods__pagination-btn">
+          <li class="promo__pagination-item">
+            <button class="promo__pagination-btn">
               <span class="visually-hidden">2 товар</span>
             </button>
           </li>
-          <li class="preview-goods__pagination-item">
-            <button class="preview-goods__pagination-btn">
+          <li class="promo__pagination-item">
+            <button class="promo__pagination-btn">
               <span class="visually-hidden">3 товар</span>
             </button>
           </li>
         </ol>
       </div>
 
-    </article>
+    </section>
 
     <section class="category">
 
       <div class="container">
         <h2 class="visually-hidden">Категории</h2>
-        <table class="category__table">
-          <tr>
-            <td class="category__item category__item--vr"></td>
-            <td class="category__item category__item--monopod"></td>
-            <td class="category__item category__item--action-cameras"></td>
-            <td class="category__item category__item--fitness"></td>
-            <td class="category__item category__item--smart-watch"></td>
-            <td class="category__item category__item--quadrocopter"></td>
-          </tr>
-          <tr>
-            <th class="category__title">Виртуальная реальность</th>
-            <th class="category__title">Моноподы для селфи</th>
-            <th class="category__title">Экшн-камеры</th>
-            <th class="category__title">Фитнес-браслеты</th>
-            <th class="category__title">Умные часы</th>
-            <th class="category__title">Квадрокоптеры</th>
-          </tr>
-        </table>
+        <ul class="category__list reset-list">
+          <li class="category__item category__item--vr">
+            <span class="category__decoration"></span>
+            <p class="category__title">Виртуальная реальность</p>
+          </li>
+          <li class="category__item category__item--monopod">
+            <span class="category__decoration"></span>
+            <p class="category__title">Моноподы для селфи</p>
+          </li>
+          <li class="category__item category__item--action-cameras">
+            <span class="category__decoration"></span>
+            <p class="category__title">Экшн-камеры</p>
+          </li>
+          <li class="category__item category__item--fitness">
+            <span class="category__decoration"></span>
+            <p class="category__title">Фитнес-браслеты</p>
+          </li>
+          <li class="category__item category__item--smart-watch">
+            <span class="category__decoration"></span>
+            <p class="category__title">Умные часы</p>
+          </li>
+          <li class="category__item category__item--quadrocopter">
+            <span class="category__decoration"></span>
+            <p class="category__title">Квадрокоптеры</p>
+          </li>
+        </ul>
       </div>
 
     </section>
@@ -245,7 +253,7 @@
     <section class="on-order">
 
       <div class="container">
-        <h2>
+        <h2 class="on-order__title">
           <a class="on-order__btn text-spacing" href="#">Доставим редкий товар под заказ</a>
         </h2>
       </div>
@@ -286,7 +294,7 @@
     <section class="subscribe">
 
       <div class="container">
-        <h2 class="subscribe__title huge-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe__title huge-title">Подпишитесь<br> на рассылку</h2>
         <p class="subscribe__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
           также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe__form" method="POST" action="https://echo.htmlacademy.ru/">

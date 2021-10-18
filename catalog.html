@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="header-catalog">
+  <header class="page-header page-header--catalog">
 
     <div class="container">
       <a class="logo" href="index.html">
@@ -79,7 +79,7 @@
 
   </header>
 
-  <main class="main-container">
+  <main class="page-main">
 
     <header class="header-inner">
       <div class="container">
@@ -99,13 +99,14 @@
     </header>
 
     <div class="wrapper">
+      <!-- background color block filter and sorting -->
       <div class="container">
 
         <section class="filter">
 
           <h2 class="filter__title text-spacing">Фильтр:</h2>
           <form class="filter__monopod" method="POST" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter__group">
+            <fieldset class="filter__group reset-list">
               <legend class="filter__item">Стоимость</legend>
               <button class="range-toggle range-toggle--min">
                 <span>Изменить минимальную цену</span>
@@ -120,25 +121,43 @@
                 <input class="filter__input" type="number" name="max-price">
               </label>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group reset-list">
               <legend class="filter__item">Цвет</legend>
-              <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
-              <label for="black">Черный</label>
-              <input class="filter__checkbox" type="checkbox" id="white" name="white" checked>
-              <label for="white">Белый</label>
-              <input class="filter__checkbox" type="checkbox" id="blue" name="blue">
-              <label for="blue">Синий</label>
-              <input class="filter__checkbox" type="checkbox" id="red" name="red">
-              <label for="red">Красны</label>
-              <input class="filter__checkbox" type="checkbox" id="pink" name="pink">
-              <label for="pink">Розовый</label>
+              <ul class="filter__list reset-list">
+                <li>
+                  <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li>
+                  <input class="filter__checkbox" type="checkbox" id="white" name="white" checked>
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input class="filter__checkbox" type="checkbox" id="blue" name="blue">
+                  <label for="blue">Синий</label>
+                </li>
+                <li>
+                  <input class="filter__checkbox" type="checkbox" id="red" name="red">
+                  <label for="red">Красны</label>
+                </li>
+                <li>
+                  <input class="filter__checkbox" type="checkbox" id="pink" name="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset class="filter__group">
+            <fieldset class="filter__group reset-list">
               <legend class="filter__item">Bluetooth</legend>
-              <input class="filter__radio" type="radio" id="yes" name="boolean" checked>
-              <label for="yes">Есть</label>
-              <input class="filter__radio" type="radio" id="no" name="boolean">
-              <label for="no">Нет</label>
+              <ul class="filter__list reset-list">
+                <li>
+                  <input class="filter__radio" type="radio" id="yes" name="boolean" checked>
+                  <label for="yes">Есть</label>
+                </li>
+                <li>
+                  <input class="filter__radio" type="radio" id="no" name="boolean">
+                  <label for="no">Нет</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="filter__btn text-spacing btn-decoration" type="submit">показать</button>
           </form>
@@ -161,86 +180,84 @@
           <section class="goods">
 
             <h2 class="visually-hidden">Список товров</h2>
-            <div class="goods__wrapper">
-              <ul class="goods__list reset-list">
-                <li class="goods__item">
-                  <article class="product">
-                    <a class="product__link" href="#">
-                      <div class="product__image-wrapper">
-                        <img class="product__img" src="img/catalog/monopod-amateur.jpg" width="360" height="380"
-                          alt="простой монопод для смартфона черного цвета">
-                      </div>
-                      <h3 class="product__title">Любительская селфи-палка</h3>
-                    </a>
-                    <b class="product__price">500 ₽</b>
-                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
-                  </article>
-                </li>
-                <li class="goods__item">
-                  <article class="product">
-                    <a class="product__link" href="#">
-                      <div class="product__image-wrapper">
-                        <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380"
-                          alt="профессиональный монопод черного цвета">
-                      </div>
-                      <h3 class="product__title">Профессиональная селфи-палка</h3>
-                    </a>
-                    <b class="product__price">1 500 ₽</b>
-                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
-                  </article>
-                </li>
-                <li class="goods__item">
-                  <article class="product">
-                    <a class="product__link" href="#">
-                      <div class="product__image-wrapper">
-                        <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380"
-                          alt="желтый монопод с черной резиновой ручкой">
-                      </div>
-                      <h3 class="product__title">Непотопляемая селфи-палка</h3>
-                    </a>
-                    <b class="product__price">2 500 ₽</b>
-                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
-                  </article>
-                </li>
-                <li class="goods__item">
-                  <article class="product">
-                    <a class="product__link" href="#">
-                      <div class="product__image-wrapper">
-                        <img class="product__img" src="img/catalog/monopod-follow-me.jpg" width="360" height="380"
-                          alt="монопод для селфи в виде руки»">
-                      </div>
-                      <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
-                    </a>
-                    <b class="product__price">4 900 ₽</b>
-                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
-                  </article>
-                </li>
-              </ul>
-              <a class="goods__more-btn text-spacing">загрузить еще</a>
-              <ul class="pagination">
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link--prev pagination__link--disabled text-spacing">назад</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link--current">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">...</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">15</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link pagination__link--next text-spacing" href="#">вперед</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="goods__list reset-list">
+              <li class="goods__item">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <div class="product__image-wrapper">
+                      <img class="product__img" src="img/catalog/monopod-amateur.jpg" width="360" height="380"
+                        alt="простой монопод для смартфона черного цвета">
+                    </div>
+                    <h3 class="product__title">Любительская селфи-палка</h3>
+                  </a>
+                  <b class="product__price">500 ₽</b>
+                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                </article>
+              </li>
+              <li class="goods__item">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <div class="product__image-wrapper">
+                      <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380"
+                        alt="профессиональный монопод черного цвета">
+                    </div>
+                    <h3 class="product__title">Профессиональная селфи-палка</h3>
+                  </a>
+                  <b class="product__price">1 500 ₽</b>
+                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                </article>
+              </li>
+              <li class="goods__item">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <div class="product__image-wrapper">
+                      <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380"
+                        alt="желтый монопод с черной резиновой ручкой">
+                    </div>
+                    <h3 class="product__title">Непотопляемая селфи-палка</h3>
+                  </a>
+                  <b class="product__price">2 500 ₽</b>
+                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                </article>
+              </li>
+              <li class="goods__item">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <div class="product__image-wrapper">
+                      <img class="product__img" src="img/catalog/monopod-follow-me.jpg" width="360" height="380"
+                        alt="монопод для селфи в виде руки»">
+                    </div>
+                    <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
+                  </a>
+                  <b class="product__price">4 900 ₽</b>
+                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                </article>
+              </li>
+            </ul>
+            <a class="goods__more-btn text-spacing">загрузить еще</a>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--prev pagination__link--disabled text-spacing">назад</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">15</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next text-spacing" href="#">вперед</a>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
