@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xm" sizes="16x16">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,14 +26,14 @@
           <button class="search-form__btn" type="submit">Найти</button>
         </form>
         <ul class="header-top__list reset-list">
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--login" href="#">Войти</a>
+          <li class="header-top__item header-top__item--login">
+            <a class="header-top__link" href="#">Войти</a>
           </li>
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--compare" href="#">Сравнить</a>
+          <li class="header-top__item header-top__item--compare">
+            <a class="header-top__link" href="#">Сравнить</a>
           </li>
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--cart" href="#">Корзина</a>
+          <li class="header-top__item header-top__item--cart">
+            <a class="header-top__link" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -90,14 +90,12 @@
         </button>
         <ul class="promo__list reset-list">
           <li class="promo__item promo__item--quadcopter">
-            <img class="promo__img" src="img/index/promo-quadrocopter.png" width="560" height="560"
-              alt="Фото квадрокоптера">
+            <img class="promo__img" src="img/index/promo-quadrocopter.png" width="560" height="560" alt="Фото квадрокоптера">
             <div class="promo__right-column">
               <span class="promo__decoration">01</span>
               <h2 class="promo__title huge-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                замаскированным под стандартную камеру.</p>
-              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <p class="promo__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="promo__btn-more text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">800 м</td>
@@ -116,9 +114,8 @@
             <div class="promo__right-column">
               <span class="promo__decoration">02</span>
               <h2 class="promo__title">Худеем правильно!</h2>
-              <p class="promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-                занятия и соблюдать диету.</p>
-              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <p class="promo__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="promo__btn-more text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">48 часов</td>
@@ -130,15 +127,13 @@
             </div>
           </li>
           <li class="promo__item promo__item--monopod visually-hidden">
-            <img class="promo__img" src="img/index/promo-monopod.png" width="560" height="560"
-              alt="Фото монопода">
+            <img class="promo__img" src="img/index/promo-monopod.png" width="560" height="560" alt="Фото монопода">
             <div class="promo__right-column">
               <span class="promo__decoration">03</span>
               <h2 class="promo__title">Делай селфи, как Бен Стиллер!</h2>
-              <p class="promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              <p class="promo__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
-              <a class="promo__btn text-spacing btn-decoration" href="#">Подробнее</a>
+              <a class="promo__btn-more text-spacing btn-decoration" href="#">Подробнее</a>
               <table class="specifications">
                 <tr>
                   <td class="specifications__value">8,5 м</td>
@@ -154,7 +149,7 @@
             </div>
           </li>
         </ul>
-        <ol class="promo__pagination">
+        <ol class="promo__pagination reset-list">
           <li class="promo__pagination-item">
             <button class="promo__pagination-btn promo__pagination-btn--active">
               <span class="visually-hidden">1 товар</span>
@@ -186,7 +181,7 @@
           </li>
           <li class="category__item category__item--monopod">
             <span class="category__decoration"></span>
-            <p class="category__title">Моноподы для селфи</p>
+            <p class="category__title">Моноподы<br> для селфи</p>
           </li>
           <li class="category__item category__item--action-cameras">
             <span class="category__decoration"></span>
@@ -228,8 +223,9 @@
           <dt class="services__title services__title--delivery huge-title">Доставка</dt>
           <dd class="services__description services__description--delivery">
             Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+            к&nbspвашему подъезду совершенно бесплатно! Ведь
+            мы&nbspнеплохо заработаем, поднимая его на ваш этаж.
+          </dd>
         </dl>
         <dl class="services__details services__details--guarantee visually-hidden">
           <dt class="services__title services__title--guarantee huge-title">Гарантия</dt>
@@ -237,14 +233,16 @@
             Если из-за возгорания купленного у нас
             товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</dd>
+            Товар, не дом, конечно же.
+          </dd>
         </dl>
         <dl class=" services__details services__details--credit visually-hidden">
           <dt class="services__title services__title--credit huge-title">Кредит</dt>
           <dd class="services__description services__description--credit">
             Залезть в долговую яму стало проще! Кредитные
             консультанты подберут для вас наиболее выгодные условия
-            кредита. Выгодные для банка, разумеется.</dd>
+            кредита. Выгодные для банка, разумеется.
+          </dd>
         </dl>
       </div>
 
@@ -264,7 +262,7 @@
 
       <div class="container">
         <section class="about">
-          <h2 class="about__title huge-title">О нас</h2>
+          <h2 class="about__title about__title--decoration huge-title">О нас</h2>
           <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
           </p>
@@ -276,9 +274,8 @@
           <a class="about__btn text-spacing btn-decoration" href="#">подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title huge-title">Контакты</h2>
-          <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
-            работоспособность покупки.</p>
+          <h2 class="contacts__title contacts__title--decoration huge-title">Контакты</h2>
+          <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
           <h3 class="contacts__title">Интернет-магазин «Девайс»</h3>
           <address class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
             <a class="contacts__phone" href="tel:881288121212">+7 (812) 812-12-12</a>
@@ -295,8 +292,7 @@
 
       <div class="container">
         <h2 class="subscribe__title huge-title">Подпишитесь<br> на рассылку</h2>
-        <p class="subscribe__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
-          также акции, спецпредложения и вот это вот всё.</p>
+        <p class="subscribe__text">Еженедельный дайджест с обзорами новинок, длительными&nbspтест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe__form" method="POST" action="https://echo.htmlacademy.ru/">
           <input class="subscribe__field-mail" type="text" name="e-mail" placeholder="Ваш e-mail">
           <button class="subscribe__btn text-spacing" type="submit" name="subscribe">подписаться</button>
@@ -324,16 +320,15 @@
           <a class="page-footer__navigation-link text-spacing" href="#">контакты</a>
         </nav>
         <div class="social">
-          <a class="social__link social__link--facebook" href="#">мы в фейсбук</a>
-          <a class="social__link social__link--instagram" href="#">мы в инстаграм</a>
-          <a class="social__link social__link--twitter" href="#">мы в Твиттере</a>
+          <a class="social__link social__link--facebook visually-hidden" href="#">мы в фейсбук</a>
+          <a class="social__link social__link--instagram visually-hidden" href="#">мы в инстаграм</a>
+          <a class="social__link social__link--twitter visually-hidden" href="#">мы в Твиттере</a>
         </div>
       </div>
       <div class="page-footer__column">
         <a class="page-footer__phone" href="tel:881288121212">Тел.: +7 (812) 812-12-12</a>
         <a class="page-footer__copyright" href="https://htmlacademy.ru">
-          <img class="page-footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34"
-            alt="логотип htmlacademy">
+          <img class="page-footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy">
         </a>
       </div>
     </div>
