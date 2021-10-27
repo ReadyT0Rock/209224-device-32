@@ -108,10 +108,10 @@
           <form class="filter__monopod" method="POST" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group reset-list">
               <legend class="filter__item">Стоимость</legend>
-              <button class="range-toggle range-toggle--min">
+              <button class="range-toggle range-toggle--min" type="button">
                 <span>Изменить минимальную цену</span>
               </button>
-              <button class="range-toggle range-toggle--max">
+              <button class="range-toggle range-toggle--max" type="button">
                 <span>Изменить максимальную цену</span>
               </button>
               <label class="filter__label">от 0
@@ -121,8 +121,8 @@
                 <input class="filter__input" type="number" name="max-price">
               </label>
             </fieldset>
-            <fieldset class="filter__group reset-list">
-              <legend class="filter__item">Цвет</legend>
+            <fieldset class="filter__group filter__group-color reset-list">
+              <legend class="filter__item filter__item-color">Цвет</legend>
               <ul class="filter__list reset-list">
                 <li>
                   <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
@@ -146,8 +146,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__group reset-list">
-              <legend class="filter__item">Bluetooth</legend>
+            <fieldset class="filter__group filter__group-Bluetooth reset-list">
+              <legend class="filter__item filter__item-Bluetooth">Bluetooth</legend>
               <ul class="filter__list reset-list">
                 <li>
                   <input class="filter__radio" type="radio" id="yes" name="boolean" checked>
@@ -173,8 +173,9 @@
                 <option class="sorting__popular" value="popular">Сначала популярные</option>
               </select>
               <div class="arrows">
-                <button class="arrow arrow--up">По возрастанию</button>
-                <button class="arrow arrow--down arrow--action">По убыванию</button>
+                <button class="arrow arrow--up"><span class="visually-hidden">По возрастанию</span></button>
+                <button class="arrow arrow--down arrow--action"><span class="visually-hidden">По
+                    убыванию</span></button>
               </div>
             </form>
           </div>
@@ -187,36 +188,45 @@
                 <article class="product">
                   <a class="product__link" href="#">
                     <div class="product__image-wrapper">
-                      <img class="product__img" src="img/catalog/monopod-amateur.jpg" width="360" height="380" alt="простой монопод для смартфона черного цвета">
+                      <img class="product__img" src="img/catalog/monopod-amateur.jpg" width="360" height="380"
+                        alt="простой монопод для смартфона черного цвета">
                     </div>
                     <h3 class="product__title">Любительская селфи-палка</h3>
                   </a>
                   <b class="product__price">500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
                 <article class="product">
                   <a class="product__link" href="#">
                     <div class="product__image-wrapper">
-                      <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380" alt="профессиональный монопод черного цвета">
+                      <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380"
+                        alt="профессиональный монопод черного цвета">
                     </div>
-                    <h3 class="product__title">Профессиональная селфи-палка</h3>
+                    <h3 class="product__title">Профессиональная селфи-&nbsp;палка</h3>
                   </a>
                   <b class="product__price">1 500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
                 <article class="product">
                   <a class="product__link" href="#">
                     <div class="product__image-wrapper">
-                      <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380" alt="желтый монопод с черной резиновой ручкой">
+                      <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380"
+                        alt="желтый монопод с черной резиновой ручкой">
                     </div>
-                    <h3 class="product__title">Непотопляемая селфи-палка</h3>
+                    <h3 class="product__title">Непотопляемая селфи-&nbsp;палка</h3>
                   </a>
                   <b class="product__price">2 500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
@@ -229,7 +239,9 @@
                     <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
                   </a>
                   <b class="product__price">4 900 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
             </ul>
@@ -268,7 +280,7 @@
 
     <div class="container">
       <div class="page-footer__column">
-        <a cclass="footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html">
           <img src="img/device-footer.svg" width="145" height="36" alt="логотип магазина Девайс">
         </a>
         <p class="page-footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -280,15 +292,16 @@
           <a class="page-footer__navigation-link text-spacing" href="#">контакты</a>
         </nav>
         <div class="social">
-          <a class="social__link social__link--facebook visually-hidden" href="#">мы в фейсбук</a>
-          <a class="social__link social__link--instagram visually-hidden" href="#">мы в инстаграм</a>
-          <a class="social__link social__link--twitter visually-hidden" href="#">мы в Твиттере</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="мы в фейсбук"></a>
+          <a class="social__link social__link--instagram" href="#" aria-label="мы в инстаграм"></a>
+          <a class="social__link social__link--twitter" href="#" aria-label="мы в Твиттере"></a>
         </div>
       </div>
       <div class="page-footer__column">
         <a class="page-footer__phone" href="tel:881288121212">Тел.: +7 (812) 812-12-12</a>
         <a class="page-footer__copyright" href="https://htmlacademy.ru">
-          <img class="page-footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy">
+          <img class="page-footer__copyright-icon" src="img/htmlacademy.svg" width="115" height="34"
+            alt="логотип htmlacademy">
         </a>
       </div>
     </div>
