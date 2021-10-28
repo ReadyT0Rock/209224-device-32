@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xm" sizes="16x16">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,17 +25,17 @@
           <button class="search-form__btn" type="submit">Найти</button>
         </form>
         <ul class="header-top__list reset-list">
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--name" href="#">Коля Петухов</a>
+          <li class="header-top__item header-top__item--name">
+            <a class="header-top__link" href="#">Коля Петухов</a>
           </li>
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--logout" href="#">Выйти</a>
+          <li class="header-top__item header-top__item--logout">
+            <a class="header-top__link" href="#">Выйти</a>
           </li>
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--compare" href="#">Сравнить</a>
+          <li class="header-top__item header-top__item--compare">
+            <a class="header-top__link" href="#">Сравнить</a>
           </li>
-          <li class="header-top__item">
-            <a class="header-top__link header-top__link--cart" href="#">Корзина</a>
+          <li class="header-top__item  header-top__item--cart">
+            <a class="header-top__link" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -108,10 +108,10 @@
           <form class="filter__monopod" method="POST" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__group reset-list">
               <legend class="filter__item">Стоимость</legend>
-              <button class="range-toggle range-toggle--min">
+              <button class="range-toggle range-toggle--min" type="button">
                 <span>Изменить минимальную цену</span>
               </button>
-              <button class="range-toggle range-toggle--max">
+              <button class="range-toggle range-toggle--max" type="button">
                 <span>Изменить максимальную цену</span>
               </button>
               <label class="filter__label">от 0
@@ -121,8 +121,8 @@
                 <input class="filter__input" type="number" name="max-price">
               </label>
             </fieldset>
-            <fieldset class="filter__group reset-list">
-              <legend class="filter__item">Цвет</legend>
+            <fieldset class="filter__group filter__group-color reset-list">
+              <legend class="filter__item filter__item-color">Цвет</legend>
               <ul class="filter__list reset-list">
                 <li>
                   <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
@@ -146,8 +146,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__group reset-list">
-              <legend class="filter__item">Bluetooth</legend>
+            <fieldset class="filter__group filter__group-Bluetooth reset-list">
+              <legend class="filter__item filter__item-Bluetooth">Bluetooth</legend>
               <ul class="filter__list reset-list">
                 <li>
                   <input class="filter__radio" type="radio" id="yes" name="boolean" checked>
@@ -167,13 +167,16 @@
         <div>
           <div class="sorting">
             <h2 class="sorting__title text-spacing">Сортировка</h2>
-            <form method="POST" action="https://echo.htmlacademy.ru/">
+            <form class="sorting__form" method="POST" action="https://echo.htmlacademy.ru/">
               <select name="sorting__type">
                 <span class="visually-hidden">поле сортировки по типу</span>
                 <option class="sorting__popular" value="popular">Сначала популярные</option>
               </select>
-              <button class="arrow arrow--up">По возрастанию</button>
-              <button class="arrow arrow--down arrow--action">По убыванию</button>
+              <div class="arrows">
+                <button class="arrow arrow--up"><span class="visually-hidden">По возрастанию</span></button>
+                <button class="arrow arrow--down arrow--action"><span class="visually-hidden">По
+                    убыванию</span></button>
+              </div>
             </form>
           </div>
 
@@ -191,7 +194,9 @@
                     <h3 class="product__title">Любительская селфи-палка</h3>
                   </a>
                   <b class="product__price">500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
@@ -201,10 +206,12 @@
                       <img class="product__img" src="img/catalog/monopod-professional.jpg" width="360" height="380"
                         alt="профессиональный монопод черного цвета">
                     </div>
-                    <h3 class="product__title">Профессиональная селфи-палка</h3>
+                    <h3 class="product__title">Профессиональная селфи-&nbsp;палка</h3>
                   </a>
                   <b class="product__price">1 500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
@@ -214,10 +221,12 @@
                       <img class="product__img" src="img/catalog/monopod-unsinkable .jpg" width="360" height="380"
                         alt="желтый монопод с черной резиновой ручкой">
                     </div>
-                    <h3 class="product__title">Непотопляемая селфи-палка</h3>
+                    <h3 class="product__title">Непотопляемая селфи-&nbsp;палка</h3>
                   </a>
                   <b class="product__price">2 500 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
               <li class="goods__item">
@@ -230,13 +239,15 @@
                     <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
                   </a>
                   <b class="product__price">4 900 ₽</b>
-                  <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  <div class="product__btn-wrapper">
+                    <a class="product__btn text-spacing btn-decoration" href="#">подробнее</a>
+                  </div>
                 </article>
               </li>
             </ul>
             <a class="goods__more-btn text-spacing">загрузить еще</a>
-            <ul class="pagination">
-              <li class="pagination__item">
+            <ul class="pagination reset-list">
+              <li class="pagination__item pagination__item--prev">
                 <a class="pagination__link pagination__link--prev pagination__link--disabled text-spacing">назад</a>
               </li>
               <li class="pagination__item">
@@ -254,7 +265,7 @@
               <li class="pagination__item">
                 <a class="pagination__link" href="#">15</a>
               </li>
-              <li class="pagination__item">
+              <li class="pagination__item pagination__item--next">
                 <a class="pagination__link pagination__link--next text-spacing" href="#">вперед</a>
               </li>
             </ul>
@@ -269,7 +280,7 @@
 
     <div class="container">
       <div class="page-footer__column">
-        <a cclass="footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html">
           <img src="img/device-footer.svg" width="145" height="36" alt="логотип магазина Девайс">
         </a>
         <p class="page-footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -281,9 +292,9 @@
           <a class="page-footer__navigation-link text-spacing" href="#">контакты</a>
         </nav>
         <div class="social">
-          <a class="social__link social__link--facebook" href="#">мы в фейсбук</a>
-          <a class="social__link social__link--instagram" href="#">мы в инстаграм</a>
-          <a class="social__link social__link--twitter" href="#">мы в Твиттере</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="мы в фейсбук"></a>
+          <a class="social__link social__link--instagram" href="#" aria-label="мы в инстаграм"></a>
+          <a class="social__link social__link--twitter" href="#" aria-label="мы в Твиттере"></a>
         </div>
       </div>
       <div class="page-footer__column">
