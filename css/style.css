@@ -184,6 +184,7 @@ a {
 }
 
 .catalog__link {
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -198,6 +199,7 @@ a {
 }
 
 .navigation__item:first-child {
+  position: relative;
   width: 236px;
 }
 
@@ -221,6 +223,44 @@ a {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog {
+  position: absolute;
+  top: 68px;
+  left: -60px;
+  z-index: 2;
+  display: grid;
+  min-width: 1160px;
+  padding-left: 60px;
+  padding-bottom: 48px;
+  grid-template-columns: max-content 45px max-content 60px max-content;
+  grid-template-rows: repeat(3, 35px);
+  background-color: #FFE17F;
+}
+
+.catalog__item--monopod {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.catalog__item--action-cameras {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.catalog__item--fitness {
+  grid-column: 3;
+}
+
+.catalog__item--smart-watch {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.catalog__item--quadrocopter {
+  grid-column: 5;
+  grid-row: 1;
 }
 
 /* Promo */
@@ -288,7 +328,7 @@ a {
 .promo__btn-more {
   display: block;
   position: relative;
-  margin-bottom: 66px;
+  margin-bottom: 70px;
   padding-left: 39px;
 }
 
@@ -299,6 +339,7 @@ a {
 }
 
 .specifications__value {
+  margin: 0;
   font-size: 36px;
   line-height: 30px;
 }
@@ -572,7 +613,7 @@ a {
 }
 
 .contacts__address {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .contacts__time {
@@ -659,7 +700,7 @@ a {
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
 }
 
 .page-footer__address {
@@ -714,7 +755,7 @@ a {
   gap: 15px;
   width: 150px;
   min-height: 40px;
-  margin: 0 auto;
+  margin-left: 145px;
 }
 
 .social__link {
@@ -868,7 +909,7 @@ a {
 }
 
 .filter__item-Bluetooth {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .filter__label {
@@ -882,7 +923,7 @@ a {
 }
 
 .filter__list li {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .filter__group-color {
@@ -975,10 +1016,17 @@ a {
   margin-bottom: 22px;
 }
 
+.product__link {
+  display: block;
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+
 .product__title {
-  display: inline-block;
-  width: 260px;
+  grid-column: 1;
+  grid-row: 2;
   margin: 0;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -986,6 +1034,10 @@ a {
 }
 
 .product__price {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: auto;
+
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
@@ -994,6 +1046,10 @@ a {
 
 .product {
   position: relative;
+  display: grid;
+  grid-template-columns: 260px 100px;
+  grid-template-rows: 380px auto;
+  grid-row-gap: 33px;
 }
 
 .product__btn-wrapper {
@@ -1012,7 +1068,7 @@ a {
   width: 760px;
   min-height: 55px;
   margin-bottom: 51px;
-  padding-top: 11px;
+  padding-top: 16px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
