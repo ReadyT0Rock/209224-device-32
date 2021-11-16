@@ -1911,7 +1911,7 @@ a {
   margin-bottom: 41px;
 }
 
-.filter__group-Bluetooth {
+.filter__group-bluetooth {
   margin-bottom: 28px;
 }
 
@@ -2124,13 +2124,6 @@ a {
 
 /* Goods list */
 
-.qqq {
-  
-  min-height: 1334px;
-  background-color: white;
-
-}
-
 .goods {
   position: relative;
   width: 832px;
@@ -2146,6 +2139,8 @@ a {
   content: "";
   left: 832px;
   top: 0;
+  height: 100%;
+  width: calc((100vw - 1180px) / 2);
   background-color: white;
 }
 
